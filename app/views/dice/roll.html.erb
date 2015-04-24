@@ -1,0 +1,13 @@
+<h1>Deal The Cards</h1>
+<%
+suits = ["ace",2,3,4,5,6,7,8,9,10,"jack","queen","king"]
+numbers = ["spades","hearts","diamonds","clubs"]
+deck = numbers.product(suits)
+cards=deck.sample(5)
+%>
+
+<% cards.each do |card| %>
+<img src="http://golearntocode.com/images/cards/<%=card[0]%>_of_<%=card[1]%>.png">
+
+
+<% end %>
